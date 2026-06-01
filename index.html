@@ -109,7 +109,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.4rem 3rem;display:
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
 .work-item{position:relative;overflow:hidden;background:var(--bg2);aspect-ratio:16/9;cursor:pointer}
 .work-item iframe{width:100%;height:100%;border:none;display:block;pointer-events:none;transition:transform .5s}
-.work-item:hover iframe{pointer-events:all}
+.work-item:hover iframe{pointer-events:all; position:relative; z-index:10;}
 .work-item-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,20,16,.95) 0%,rgba(20,20,16,.2) 60%,transparent 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.2rem;transition:opacity .3s;z-index:2}
 .work-item:hover .work-item-overlay{opacity:0}
 .work-item-label{font-family:var(--ff-head);font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.3rem}
@@ -289,21 +289,21 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
       <div class="service-card">
         <div class="service-num">01</div>
         <div class="service-name">Video Editing</div>
-        <div class="service-desc">Cuts, pacing, transitions, structure — turning raw footage into something people actually want to watch. Reels, shorts, YouTube long-format, brand films, talking heads. If it needs editing, this is the spot.</div>
+        <div class="service-desc">Cuts, pacing, transitions, structure turning raw footage into something people actually want to watch. Reels, shorts, YouTube long-format, brand films, talking heads. If it needs editing, this is the spot.</div>
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
         <div class="service-name">Color Grading</div>
-        <div class="service-desc">The difference between footage that looks shot and footage that looks made. Mood, tone, consistency — colour grading is the finishing layer that makes everything feel intentional and professional.</div>
+        <div class="service-desc">The difference between footage that looks shot and footage that looks made. Mood, tone, consistency colour grading is the finishing layer that makes everything feel intentional and professional.</div>
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
         <div class="service-name">Sound Design</div>
-        <div class="service-desc">Audio mixing, levels, music sync, ambient sound — making sure your video sounds as good as it looks. Sometimes the edit is perfect but the audio kills it. Not on my watch.</div>
+        <div class="service-desc">Audio mixing, levels, music sync, ambient sound making sure your video sounds as good as it looks. Sometimes the edit is perfect but the audio kills it. Not on my watch.</div>
       </div>
     </div>
     <div class="services-note reveal reveal-delay-3">
-      <p><strong>A note on scope:</strong> Video editing is part of your content — not all of it. I handle the edit; I don't write scripts, build content strategies, or design graphics. If someone's pitching you "video editor + social strategist + copywriter + designer" as one package — that's four jobs. I do one, and I do it well.</p>
+      <p><strong>A note on scope:</strong> Video editing is part of your content, not all of it. I handle the edit; I don't write scripts, build content strategies, or design graphics. If someone's pitching you "video editor + social strategist + copywriter + designer" as one package that's four jobs. I do one, and I do it well.</p>
     </div>
   </div>
 </section>
@@ -313,17 +313,14 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
   <div class="work-inner">
     <div class="section-header">
       <div class="section-tag reveal">Selected Work</div>
-      <h2 class="section-title reveal reveal-delay-1">THE REEL</h2>
+      <h2 class="section-title reveal reveal-delay-1">THE VIDEO WORK</h2>
     </div>
     <div class="work-grid">
 
+      <!-- VIDEO 1: Vaibhav Chavan -->
       <div class="work-item reveal">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text"><iframe width="560" height="315" src="https://www.youtube.com/embed/PQSkCMcyCdI?si=kxXYO_99L1SjyOgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        </div>
+        <iframe style="position:relative; z-index:10;" width="560" height="315" src="https://www.youtube.com/embed/PQSkCMcyCdI?si=kxXYO_99L1SjyOgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
           <div class="work-item-label">Creator · YouTube</div>
           <div class="work-item-title">Vaibhav Chavan — Game Dev Creator</div>
@@ -333,13 +330,10 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
         </div>
       </div>
 
+      <!-- VIDEO 2: Jiffy -->
       <div class="work-item reveal reveal-delay-1">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text">Replace with YouTube Embed</div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4zBhz9t7Ozc?si=oHE6TWusYDwTrUPP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
           <div class="work-item-label">Food Brand · Reels</div>
           <div class="work-item-title">Jiffy — Protein Ramen Launch</div>
@@ -349,13 +343,10 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
         </div>
       </div>
 
+      <!-- VIDEO 3: Viha Jewellery -->
       <div class="work-item reveal reveal-delay-2">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text">Replace with YouTube Embed</div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JBUQhGjF3Ds?si=lH4IWNd5yey3RirC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
           <div class="work-item-label">Luxury · Product</div>
           <div class="work-item-title">Viha Jewellery — Brand Film</div>
@@ -365,13 +356,10 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
         </div>
       </div>
 
+      <!-- VIDEO 4: Tiger Yaki -->
       <div class="work-item reveal reveal-delay-1">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text">Replace with YouTube Embed</div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R0ca-Uv1eLc?si=_tN6pH8Lqap74vNm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
           <div class="work-item-label">F&B · Reels</div>
           <div class="work-item-title">Tiger Yaki — Restaurant Content</div>
@@ -381,29 +369,23 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
         </div>
       </div>
 
+      <!-- VIDEO 5: NARA -->
       <div class="work-item reveal reveal-delay-2">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text">Replace with YouTube Embed</div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vFL3iJWQjv0?si=MGH8XCoOqLkAbtti" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
-          <div class="work-item-label">Hospitality · Cinematic</div>
-          <div class="work-item-title">Dreamscape Resort — Promo Film</div>
+          <div class="work-item-label">Clothing · Cinematic</div>
+          <div class="work-item-title">NARA wear - New Collection</div>
         </div>
         <div class="work-item-play">
           <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
         </div>
       </div>
 
+      <!-- VIDEO 6: Camping Tales -->
       <div class="work-item reveal reveal-delay-3">
-        <div class="work-placeholder">
-          <div class="work-placeholder-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" style="color:#d95b2b"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <div class="work-placeholder-text">Replace with YouTube Embed</div>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7hpxp0N5ygc?si=qPJxoHDlqvtzS6rX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <div class="work-item-overlay">
           <div class="work-item-label">Travel · Lifestyle</div>
           <div class="work-item-title">Camping Tales — Trip Series</div>
@@ -413,8 +395,46 @@ footer{padding:2rem 3rem;display:flex;align-items:center;justify-content:space-b
         </div>
       </div>
 
+      <!-- VIDEO 7: Mahavir Buildcon -->
+      <div class="work-item reveal reveal-delay-1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sG03KDDpFyc?si=PxyGCAyZSwxGR-gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="work-item-overlay">
+          <div class="work-item-label">Builder · Short format reels</div>
+          <div class="work-item-title">Mahavir Buildcon — Construction Project</div>
+        </div>
+        <div class="work-item-play">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+
+      <!-- VIDEO 8: Galaxy Realty -->
+      <div class="work-item reveal reveal-delay-2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g48j0PosTEA?si=tnlCf5Smv0DjvpuN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="work-item-overlay">
+          <div class="work-item-label">Real Estate Agent · Long Format Video</div>
+          <div class="work-item-title">Galaxy Realty — Room Tour</div>
+        </div>
+        <div class="work-item-play">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+
+      <!-- VIDEO 9: Realstones -->
+      <div class="work-item reveal reveal-delay-2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NoDY24Drdak?si=G0idW2uMlkMjEcW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="work-item-overlay">
+          <div class="work-item-label">Business · Short format Reel</div>
+          <div class="work-item-title">Realstones — Testimonial</div>
+        </div>
+        <div class="work-item-play">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+
     </div>
-    <p style="margin-top:2rem;font-size:.8rem;color:var(--warm);font-family:var(--ff-head);font-weight:600;letter-spacing:.1em;text-transform:uppercase;">↑ Replace placeholders with your YouTube unlisted embed URLs. Instructions: YouTube Studio → Upload → Visibility: Unlisted → Share → Embed.</p>
   </div>
 </section>
 
